@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menConfiguracion"
+        android:icon="@drawable/ic_configuracion"
+        android:title="@string/btnConfiguracion"/>
+    <item
+        android:id="@+id/menPrincial"
+        android:icon="@drawable/ic_home_white"
+        android:title="@string/btnInicio"/>
+    <item
+        android:id="@+id/menSalir"
+        android:icon="@drawable/ic_salir_white"
+        android:title="@string/btnSalir"/>
+</menu>

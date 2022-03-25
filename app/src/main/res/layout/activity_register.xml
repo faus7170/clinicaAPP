@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+    <ImageView
+
+        android:id="@+id/imageView7"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo_blanco"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+        <CheckBox
+            android:id="@+id/checkBoxMes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/option_mensual"
+            android:textColor="@color/white" />
+        <CheckBox
+            android:id="@+id/checkBoxSemestral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/option_semestral"
+            android:textColor="@color/white" />
+        <CheckBox
+            android:id="@+id/checkBoxAnual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/option_anual"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtRegisterClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/clave"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/editEmail"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtConfirmarClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterClave"
+        tools:layout_editor_absoluteX="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtActivationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/code"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmarClave"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <!-- <LinearLayout
+        android:id="@+id/buttonSelectPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_google_signin_btn_text_light"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtActivationCode">
+        <ImageView
+            android:id="@+id/imageViewCCImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_visa" />
+        <TextView
+            android:id="@+id/textViewCCLastFour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="pagar"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Tarjeta"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/ic_navigate_next" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/buttonSelectPayment"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/txtActivationCode">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewCCImage"
+            app:srcCompat="@drawable/ic_unknown"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/add_paymentet_to_continue"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textViewCCLastFour"
+            android:gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/change"
+            android:id="@+id/textViewChange"
+            android:gravity="center_vertical" />
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_navigate_next" />
+    </LinearLayout>
+    <!--<com.paymentez.android.view.CardMultilineWidget
+        android:id="@+id/card_multiline_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtActivationCode"
+        tools:layout_editor_absoluteY="15dp"
+        android:textColor="@color/white"
+        app:shouldShowPaymentezLogo="false"
+        android:textColorHint="@color/white">
+
+    </com.paymentez.android.view.CardMultilineWidget>-->
+
+    <Button
+        android:id="@+id/btnRegistrarUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_login_register"
+        android:text="@string/action_register"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectPayment"
+        app:backgroundTint="#59FFFFFF"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="-1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

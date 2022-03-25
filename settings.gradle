@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "AppClinica"
+//include ':example'
+include ':paymentez-android'

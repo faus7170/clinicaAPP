@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--<style name="Theme.AppClinica" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+    <style name="Theme.AppClinica" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">true</item>
+        <!-- Primary brand color. -->
+    <!--<style name="Theme.AppClinica" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">-->
+        <item name="colorPrimary">@color/azulfuerte</item>
+        <item name="colorPrimaryVariant">@color/azulprincipal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/azulprincipal</item>
+        <item name="colorSecondaryVariant">@color/azulfuerte</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplahTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- Barra de navegacion inferior-->
+    <style name="BottomNavigation">
+        <item name="android:background">@color/azulprincipal</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+    </style>
+
+</resources>
+

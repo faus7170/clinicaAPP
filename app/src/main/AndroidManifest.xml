@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appclinica">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher_icono_principal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icono_principal_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="lollipop">
+        <activity
+            android:name=".ui.login.AddCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.ListCardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.exercise.VideoEjercicioActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.autohipnosis.activity.ActivityPasosHipnoHacking"
+            android:exported="true" />
+        <activity
+            android:name=".ui.autohipnosis.activity.ActivityAudio"
+            android:exported="true" />
+        <activity
+            android:name=".ui.autohipnosis.activity.ActivityPlantilla"
+            android:exported="true" />
+        <activity
+            android:name=".ui.configuracion.ConfiguracionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.exercise.VideoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TestNotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.exercise.ExerciseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.comunidad.ComentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.comunidad.ComunidadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.autohipnosis.AutohipnosisActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.exercise.AudioActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.exercise.StepsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.psicologo.DisplayPsicoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.chat.ChatRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.chat.ChatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.onboarding.IntroActivity"
+            android:configChanges="uiMode"
+            android:exported="true"
+            android:theme="@style/SplahTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.com.example.appclinica.sdk.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".notification.FirebaseService"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

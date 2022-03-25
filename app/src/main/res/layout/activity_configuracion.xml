@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ui.configuracion.ConfiguracionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/configuracio_n"
+                android:textColor="@color/black"
+                android:textSize="36sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/editImagenProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_add_photo_alternate" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="Modo obscuro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextNombreProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/txt_edit"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextApellidoProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/txt_edit"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextDescripcionProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/txt_edit"
+                android:ems="10"
+                android:hint="Tienes algun pasatiempo"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hombre" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mujer" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Otro" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGuardarDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Guardar datos" />
+
+            <Button
+                android:id="@+id/btnOmitir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Cancelar" />
+
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Cerrar sesión" />
+
+            <Button
+                android:id="@+id/btnTestActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:text="Obtener hijos"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

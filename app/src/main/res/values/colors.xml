@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF6200EE</color>
+    <color name="ros">#F696AF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorbg">#66DEF8</color>
+    <color name="orangebg">#F7BD56</color>
+
+    <!-- colors for button style -->
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+
+    <color name="black_overlay">#66000000</color>
+    <!--xde-->
+    <item name="purple_5000" type="color">#9a28a1</item>
+    <item name="purple_900" type="color">#6c0f74</item>
+    <item name="purple_300" type="color">#b869bd</item>
+
+    <item name="red_500" type="color">#af1541</item>
+    <item name="red_300" type="color">#c75b7a</item>
+
+    <color name="white_50">#ffffff</color>
+
+    <color name="black_900">#000000</color>
+
+    <color name="grey_900">#252525</color>
+
+    <color name="cyan_500">#00bcd4</color>
+    <color name="colofondo">#4d81a2</color>
+    <color name="transparente">#004d81a2</color>
+    <color name="colorcabecera">#4d81a2</color>
+    <!--Colores para tarjetas-->
+    <color name="azulprincipal">#4d81a2</color>
+    <color name="azulfuerte">#103b5c</color>
+
+
+</resources>
